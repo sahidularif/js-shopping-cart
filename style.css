@@ -1,0 +1,130 @@
+.main-content{
+    background-color: #F2F4F9;
+    margin: 20 auto;
+}
+
+.products{
+    padding: 1rem 0;
+}
+.products-center{
+    width: 50vw;
+    margin: 0 auto;
+    max-width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 1.2rem;
+    grid-row-gap: 1rem;
+}
+.products-center > article {
+    height: 200px;
+    background-color: white;
+    
+}
+.product{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid powderblue;
+    
+}
+.product:hover{
+    cursor: pointer;
+}
+.product h6{
+    font-size: 13px;
+    text-align: center;
+}
+.img-continer{
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.product-img{
+    display: block;
+    width: fit-content;
+    height: 180px;
+    transition: all 0.3s linear;
+    justify-content: center;
+    align-items: center;
+}   
+/* Cart */
+.cart-container{
+ display: block; 
+}
+.cart{
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+
+.cart.cart-img{
+    flex-grow: 8;
+}
+.cart.h6{
+   flex-grow: 1;
+}
+.cart {
+    display: flex;
+    align-items: stretch;
+    background-color: #fff;
+    align-items: center;
+    border-top: 1px solid powderblue;
+    border-bottom: 1px solid powderblue;
+}
+  
+.cart > div {
+    color: black;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.cart-img{
+    width: 80px;
+}
+.cart-summary{
+    top: 100%; 
+    position:sticky;
+}
+.cart-summary > div{
+    display: flex;
+    justify-content: space-between;
+}
+.pay-btn button{
+    width: 100%;
+    background-color: #7872B9;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    justify-content: space-between;
+    display: flex;
+}
+.pay-btn button > p{
+    padding: 0; margin: 0;
+}
+.footer{
+    top: 100%;
+    border-top: 1px solid powderblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+}
+.footer-left ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-weight:500;
+}
+.footer-btn{
+    border-radius: 5px;
+    border: 1px solid powderblue;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+.footer-left ul li:hover {
+    cursor: pointer;
+}
